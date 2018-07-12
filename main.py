@@ -15,7 +15,7 @@ print(df.head())
 
 
 app = dash.Dash()
-app.layout = (html.Div([html.H1("Power Factor Graph"),
+app.layout = (html.Div([html.H1("Power Factor Graph",style={'textAlign': 'center','color': 'blue','fontSize': 50}),
                         dcc.Graph(id="test",
                                   figure=go.Figure(
                             data=[
